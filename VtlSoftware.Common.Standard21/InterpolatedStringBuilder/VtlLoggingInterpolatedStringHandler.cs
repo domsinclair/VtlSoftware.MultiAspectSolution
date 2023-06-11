@@ -1,14 +1,9 @@
-﻿// <copyright file="VtlLoggingInterpolatedStringHandler.cs" company="View To Learn / Vtl Software Ltd">
-// Copyright (c) 2023 View To Learn / Vtl Software Ltd. All rights reserved.
-// </copyright>
-// <author> Dom Sinclair </author>
-// <date> 10 Jun 2023 </date>
-// <summary> Implements the vtl logging interpolated string handler class </summary>
-
-using System.Runtime.CompilerServices;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Text;
+using System.Runtime.CompilerServices;
 
-namespace VtlSoftware.Common.Core
+namespace VtlSoftware.Common.Standard21
 {
     /// <summary>
     /// A vtl logging interpolated string handler.
@@ -141,7 +136,6 @@ namespace VtlSoftware.Common.Core
         private class ArgumentList
         {
             #region Fields
-
             /// <summary>
             /// Zero-based index of the.
             /// </summary>

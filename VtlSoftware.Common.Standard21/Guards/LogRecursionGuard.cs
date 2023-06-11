@@ -1,11 +1,4 @@
-﻿// <copyright file="LogRecursionGuard.cs" company="View To Learn / Vtl Software Ltd">
-// Copyright (c) 2023 View To Learn / Vtl Software Ltd. All rights reserved.
-// </copyright>
-// <author> Dom Sinclair </author>
-// <date> 10 Jun 2023 </date>
-// <summary> Implements the log recursion guard class </summary>
-
-namespace VtlSoftware.Common.Core
+﻿namespace VtlSoftware.Common.Standard21
 {
     /// <summary>
     /// A log recursion guard.
@@ -18,6 +11,7 @@ namespace VtlSoftware.Common.Core
     public static class LogRecursionGuard
     {
         #region Fields
+
         /// <summary>
         /// True if is logging, false if not.
         /// </summary>
@@ -64,6 +58,7 @@ namespace VtlSoftware.Common.Core
         public class DisposeCookie : IDisposable
         {
             #region Constructors
+
             /// <summary>
             /// Constructor.
             /// </summary>
