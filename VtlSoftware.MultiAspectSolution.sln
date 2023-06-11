@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VtlSoftware.Common.Standard
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VtlSoftware.Aspects.Logging21", "VtlSoftware.Aspects.Logging21\VtlSoftware.Aspects.Logging21.csproj", "{3D34748C-9515-47F0-B00C-205A51E8E5D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VtlSoftware.Aspects.Polly21", "VtlSoftware.Aspects.Polly21\VtlSoftware.Aspects.Polly21.csproj", "{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{3D34748C-9515-47F0-B00C-205A51E8E5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D34748C-9515-47F0-B00C-205A51E8E5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D34748C-9515-47F0-B00C-205A51E8E5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
