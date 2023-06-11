@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VtlSoftware.Aspects.Logging
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VtlSoftware.Common.Standard", "VtlSoftware.Common.Standard\VtlSoftware.Common.Standard.csproj", "{9A5A62CE-EFB5-49DE-8E83-EE828D1EC82C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VtlSoftware.Common.Standard21", "VtlSoftware.Common.Standard21\VtlSoftware.Common.Standard21.csproj", "{F4EB49F6-6BF4-4EA9-8822-78D2B995DD96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VtlSoftware.Common.Standard21", "VtlSoftware.Common.Standard21\VtlSoftware.Common.Standard21.csproj", "{F4EB49F6-6BF4-4EA9-8822-78D2B995DD96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VtlSoftware.Aspects.Logging21", "VtlSoftware.Aspects.Logging21\VtlSoftware.Aspects.Logging21.csproj", "{3D34748C-9515-47F0-B00C-205A51E8E5D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{F4EB49F6-6BF4-4EA9-8822-78D2B995DD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4EB49F6-6BF4-4EA9-8822-78D2B995DD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4EB49F6-6BF4-4EA9-8822-78D2B995DD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D34748C-9515-47F0-B00C-205A51E8E5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D34748C-9515-47F0-B00C-205A51E8E5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D34748C-9515-47F0-B00C-205A51E8E5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D34748C-9515-47F0-B00C-205A51E8E5D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
