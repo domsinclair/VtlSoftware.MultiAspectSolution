@@ -1,27 +1,59 @@
-﻿using Metalama.Extensions.DependencyInjection;
+﻿
+
+using Metalama.Extensions.DependencyInjection;
 using Metalama.Framework.Aspects;
 using Metalama.Framework.Code;
 using Microsoft.Extensions.Logging;
 
 namespace VtlSoftware.Aspects.Polly21
 {
+    /// <summary>
+    /// Attribute for retry.
+    /// </summary>
+    ///
+    /// <remarks></remarks>
+    ///
+    /// <seealso cref="T:OverrideMethodAspect"/>
+
     public class RetryAttribute : OverrideMethodAspect
     {
         #region Fields
+
+        /// <summary>
+        /// (Immutable) The policy factory.
+        /// </summary>
         [IntroduceDependency]
         private readonly IPolicyFactory _policyFactory;
+        /// <summary>
+        /// (Immutable) The logger.
+        /// </summary>
         [IntroduceDependency]
         private readonly ILogger logger;
 
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        ///
+        /// <remarks></remarks>
+        ///
+        /// <param name="kind">(Optional) The kind.</param>
+
         public RetryAttribute(PolicyKind kind = PolicyKind.Retry) { this.Kind = kind; }
 
         #endregion
 
         #region Public Methods
-        // Template for async methods.
+        /// <summary>
+        /// Template for async methods.
+        /// </summary>
+        ///
+        /// <remarks></remarks>
+        ///
+        /// <returns>A dynamic?</returns>
+
         public override async Task<dynamic?> OverrideAsyncMethod()
         {
             var methodName = $"{meta.Target.Type.ToDisplayString(CodeDisplayFormat.MinimallyQualified)}.{meta.Target.Method.Name}";
@@ -50,7 +82,14 @@ namespace VtlSoftware.Aspects.Polly21
                     : CancellationToken.None);
         }
 
-        // Template for non-async methods.
+        /// <summary>
+        /// Template for non-async methods.
+        /// </summary>
+        ///
+        /// <remarks></remarks>
+        ///
+        /// <returns>A dynamic?</returns>
+
         public override dynamic? OverrideMethod()
         {
             var methodName = $"{meta.Target.Type.ToDisplayString(CodeDisplayFormat.MinimallyQualified)}.{meta.Target.Method.Name}";
@@ -75,6 +114,12 @@ namespace VtlSoftware.Aspects.Polly21
         #endregion
 
         #region Public Properties
+        /// <summary>
+        /// Gets the kind.
+        /// </summary>
+        ///
+        /// <value>The kind.</value>
+
         public PolicyKind Kind { get; }
 
         #endregion

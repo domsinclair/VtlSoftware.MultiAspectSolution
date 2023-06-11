@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VtlSoftware.Aspects.Logging
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VtlSoftware.Aspects.Polly21", "VtlSoftware.Aspects.Polly21\VtlSoftware.Aspects.Polly21.csproj", "{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VtlSoftware.MultiAspects.ConsoleApp", "VtlSoftware.MultiAspects.ConsoleApp\VtlSoftware.MultiAspects.ConsoleApp.csproj", "{557F6BF8-9996-49BC-AFF1-8603A52E1EFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{918D1D3F-9ED6-4FB9-9F7A-4AEB395D5E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557F6BF8-9996-49BC-AFF1-8603A52E1EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557F6BF8-9996-49BC-AFF1-8603A52E1EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557F6BF8-9996-49BC-AFF1-8603A52E1EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557F6BF8-9996-49BC-AFF1-8603A52E1EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
