@@ -21,4 +21,10 @@
     <ProjectReference Include="..\VtlSoftware.Aspects.Polly21\VtlSoftware.Aspects.Polly21.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

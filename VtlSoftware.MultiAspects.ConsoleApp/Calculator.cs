@@ -5,13 +5,11 @@ namespace VtlSoftware.MultiAspects.ConsoleApp
     public class Calculator
     {
         #region Fields
-
         private static int attempts;
 
         #endregion
 
         #region Constructors
-
         public Calculator()
         {
         }
@@ -24,7 +22,7 @@ namespace VtlSoftware.MultiAspects.ConsoleApp
         {
             Thread.Sleep(10);
             attempts++;
-
+            // Console.WriteLine($"This is attempt number {attempts}.");
             if(attempts <= 3)
             {
                 throw new InvalidOperationException();
