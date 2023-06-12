@@ -21,7 +21,6 @@ namespace VtlSoftware.Aspects.Logging21
     public class TimedLogMethodAttribute : OverrideMethodAspect
     {
         #region Fields
-
         /// <summary>
         /// (Immutable) The logger.
         /// </summary>
@@ -172,13 +171,12 @@ namespace VtlSoftware.Aspects.Logging21
             } finally
             {
                 watch.Stop();
+                long millisecs = watch.ElapsedMilliseconds;
                 using(var guard = LogRecursionGuard.Begin())
                 {
                     if(guard.CanLog)
                     {
-                        logger.Log(
-                            LogLevel.Information,
-                            $"{methodName} took {watch.ElapsedMilliseconds} ms to complete.");
+                        logger.Log(LogLevel.Information, $"{methodName} took {millisecs} ms to complete.");
                     }
                 }
             }

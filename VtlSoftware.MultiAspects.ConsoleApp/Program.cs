@@ -13,7 +13,6 @@ namespace VtlSoftware.MultiAspects.ConsoleApp
     internal class Program
     {
         #region Private Methods
-
         static void BuildConfig(IConfigurationBuilder builder)
         {
             builder.SetBasePath(Directory.GetCurrentDirectory())
@@ -35,7 +34,7 @@ namespace VtlSoftware.MultiAspects.ConsoleApp
                     services =>
                     {
                         services.AddTransient<Calculator>();
-                        services.AddSingleton<IPolicyFactory, PolicyFactory>();
+                        services.AddTransient<IPolicyFactory, PolicyFactory>();
                     })
                 .UseSerilog()
                 .Build();
