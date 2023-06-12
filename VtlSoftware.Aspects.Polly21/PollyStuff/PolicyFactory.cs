@@ -13,10 +13,9 @@ namespace VtlSoftware.Aspects.Polly21
     ///
     /// <seealso cref="T:IPolicyFactory"/>
 
-    internal class PolicyFactory : IPolicyFactory
+    public class PolicyFactory : IPolicyFactory
     {
         #region Fields
-
         /// <summary>
         /// (Immutable) The asynchronous retry.
         /// </summary>
